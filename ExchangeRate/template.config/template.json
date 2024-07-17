@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json.schemastore.org/exchangerate",
+  "author": "Ekon",
+  "classifications": ["Web", "API"],
+  "identity": "Ekon.ExchangeRate",
+  "name": "Ekon ExchangeRate",
+  "shortName": "ekonexchangerate",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "ExchangeRate",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            ".vs/**",
+            "**/bin/**",
+            "**/obj/**",
+            ".git/**"
+          ]
+        }
+      ]
+    }
+  ],
+  "primaryOutputs": [
+    { "path": "ExchangeRate.API/ExchangeRate.API.csproj" },
+    { "path": "ExchangeRate.Core/ExchangeRate.Core.csproj" },
+    { "path": "ExchangeRate.Helpers/ExchangeRate.Helpers.csproj" },
+    { "path": "ExchangeRate.Logging/ExchangeRate.Logging.csproj" },
+    { "path": "ExchangeRate.Repository/ExchangeRate.Repository.csproj" },
+    { "path": "ExchangeRate.Service/ExchangeRate.Service.csproj" },
+    { "path": "ExchangeRate.Web/ExchangeRate.Web.csproj" }
+  ],
+  "defaultName": "ExchangeRate"
+}
