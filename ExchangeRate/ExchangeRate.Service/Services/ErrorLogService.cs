@@ -29,7 +29,7 @@ namespace ExchangeRate.Service.Services
             await _unitOfWork.CommitAsync();
         }
 
-
+        //
         public async Task ErrorLogWithBulk(IEnumerable<ErrorLogDto> list)
         {
             await _errorLogRepository.WithBulk(ObjectMapper.Mapper.Map<IEnumerable<ErrorLog>>(list));
