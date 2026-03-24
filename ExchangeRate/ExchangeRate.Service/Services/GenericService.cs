@@ -1,4 +1,3 @@
-﻿using AutoMapper.Internal.Mappers;
 using ExchangeRate.Core.Repositories;
 using ExchangeRate.Core.Services;
 using ExchangeRate.Core.UnitOfWork;

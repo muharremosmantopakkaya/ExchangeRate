@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace ExchangeRate.Service.Mapping
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<MapProfile>();
-            });
+            }, null);
             return config.CreateMapper();
         });
         public static IMapper Mapper => lazy.Value;
